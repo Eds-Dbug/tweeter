@@ -21,6 +21,15 @@ body {
   font-size: 24px;
 }
 
+main{
+  width: 90%;
+  margin: auto;
+  border-style: solid;
+  text-align: center;
+  background-color: #f4f1ec;
+  box-sizing: border-box;
+}
+
 
 
 /*

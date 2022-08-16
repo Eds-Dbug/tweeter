@@ -1,0 +1,16 @@
+header {
+  height: 400px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;;
+  align-items: center;
+  padding: 350px 0 200px 0 ;
+  box-sizing: border-box;
+  background-color: orange;
+  background-image: url("../images/arabesque.png");
+}
+
+.name {
+  color: #FFFFFF;
+}
