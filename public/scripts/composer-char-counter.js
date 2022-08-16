@@ -1,0 +1,17 @@
+$(document).ready( function() {
+  console.log('hello there');
+
+  $("#tweet-text").on('input', function() {
+    let $counterElement = $(this).parent().children('.btn-counter').children('.counter');
+    let characterLength = $(this).val().length;
+    const initialValue =  140;
+    let currentValue = initialValue - characterLength;
+
+    if( currentValue < 0 ) {
+      $counterElement.css('color', 'red');
+    }
+      $counterElement.text(currentValue);
+  });
+
+}); 
+
