@@ -12,7 +12,10 @@
 
     <!-- NEW-TWEET CSS-->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-   
+
+    <!-- TWEET CSS -->
+    <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
 
@@ -48,7 +51,7 @@
     </nav>
 
     <!-- HEADER WITH AVATAR -->
-    <header>
+    <header id="main-header">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
@@ -75,12 +78,24 @@
       </section>
       
       <section class="tweet-container">
-
-        <article class="weet">
-          <header></header>
-          <footer></footer>
-        </article>
-
+          <article class="tweet">
+            <header>
+              <div>
+                <img class="logo" src="./images/cartoonFace.jpg" width="40" height="40">
+                <span class="personName">Name</span>
+              </div>
+              <span>@handle</span>
+            </header>
+            <p>Have you ever seen the rain comin down a sunny day...</p>
+            <footer>
+              <span>10 days ago</span>
+              <div class="options">
+                <i class="fa fa-flag" aria-hidden="true"></i>
+                <i class="fa fa-retweet" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </div>
+            </footer>
+          </article>
       </section>
 
     </main>

@@ -1,0 +1,38 @@
+article.tweet {
+  width: 90%;
+  margin: auto;
+  border: 3px solid #6c2323;
+  margin-top: 1em;
+}
+
+article.tweet header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+}
+
+article.tweet header div {
+  display: flex;
+}
+
+article.tweet p {
+  border-bottom: 2px solid;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  font-weight: bold;
+}
+
+.options {
+  color: #243260;
+}
+
+.options i.fa.fa-flag:hover, .options i.fa.fa-retweet:hover, .options i.fa.fa-heart:hover {
+  color: red;
+}
+
+article.tweet footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+}
