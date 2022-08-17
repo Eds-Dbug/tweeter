@@ -5,6 +5,7 @@
  */
 
 
+
 /*****************************************************************************
 * TIMEAGO FORMAT
 ****************************************************************************/
@@ -36,6 +37,14 @@ const renderTweets = function(tweets) {
   }
   
 }
+/*****************************************************************************
+* FOR ESCAPING
+****************************************************************************/
+const escp = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
 /*****************************************************************************
 * FOR CREATING TWEET ELEMENT
@@ -49,7 +58,7 @@ function createTweetElement(tweetData) {
       </div>
       <span>${tweetData.user.handle}</span>
     </header>
-    <p>${tweetData.content.text}</p>
+    <p>${escp(tweetData.content.text)}</p>
     <footer>
       <span>${timeAgoConvert(tweetData.created_at)}</span>
       <div class="options">
