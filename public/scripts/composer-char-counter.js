@@ -1,5 +1,5 @@
 $(document).ready( function() {
-
+  //console.log('hello there');
 
   $("#tweet-text").on('input', function() {
     let $counterElement = $(this).parent().children('.btn-counter').children('.counter');
@@ -14,6 +14,4 @@ $(document).ready( function() {
     }
       $counterElement.text(currentValue);
   });
-
-}); 
 
