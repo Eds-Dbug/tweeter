@@ -30,10 +30,11 @@ const renderTweets = function(tweets) {
   // takes return value and appends it to the tweets container
   $tweetContainer = $('#tweet-container')
   $tweetContainer.html('');
+
   for(const data of tweets) {
     let $tweet = createTweetElement(data);
     // to add it to the page so we can make sure it's got all the right elements, classes, etc.
-    $tweetContainer.append($tweet); 
+    $tweetContainer.prepend($tweet); 
   }
   
 }
@@ -58,7 +59,7 @@ function createTweetElement(tweetData) {
       </div>
       <span>${tweetData.user.handle}</span>
     </header>
-    <p>${escp(tweetData.content.text)}</p>
+    <p class="tweet-p">${escp(tweetData.content.text)}</p>
     <footer>
       <span>${timeAgoConvert(tweetData.created_at)}</span>
       <div class="options">

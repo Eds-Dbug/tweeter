@@ -21,6 +21,8 @@ article.tweet p {
   margin: auto;
   display: flex;
   font-weight: bold;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .options {
