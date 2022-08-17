@@ -9,6 +9,8 @@ $(document).ready( function() {
 
     if( currentValue < 0 ) {
       $counterElement.css('color', 'red');
+    } else {
+      $counterElement.css('color', '#545149');
     }
       $counterElement.text(currentValue);
   });
