@@ -1,5 +1,4 @@
   $("#tweet-text").on('input', function() {
-    alert('on refactor');
     let $counterElement = $(this).parent().children('.btn-counter').children('.counter');
     let characterLength = $(this).val().length;
     const initialValue =  140;
