@@ -37,3 +37,17 @@
   display: flex;
   justify-content: space-between;
 }
+
+.error{
+  display: none;
+  background-color: red;
+  padding: 0 0.4em;
+}
+
+.error i {
+  color: #FFFFFF;
+}
+
+.error i span {
+  font-family: 'Source Sans Pro',sans-serif;
+}

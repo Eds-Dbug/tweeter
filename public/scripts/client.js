@@ -86,6 +86,15 @@ function loadTweets() {
   )
 }
 
+/*****************************************************************************
+* FOR DISPLAYING ERRORS IN TEXTBOX
+****************************************************************************/
+function displayErr(msg) {
+  const $error = $('#error');
+  $error.children('i').children('span').text(` Error: ${msg}`);
+  $error.slideDown();
+}
+
 /****************************************************************************************************************************************************************
 * WHEN THE DOCUMENT IS FINISHED RENDERING
 ********************************************************************************
@@ -94,6 +103,9 @@ $(document).ready(function() {
   /*****************************************************************************
    * RENDER THE TWEET DATA
    ****************************************************************************/
+  //hide the error and load the existing tweets
+  const $error = $('#error');
+  //$error.hide();
   loadTweets();
   //console.log(initialTweets);
   
@@ -107,23 +119,26 @@ $(document).ready(function() {
 
     const $tweetTextbox = $('#tweet-text');
     //const textVal = $tweetTextbox.val()
-    const textVal = $tweetTextbox.text($tweetTextbox.val());
+    const textVal = $tweetTextbox.val();
     const textValLen = textVal.length;
     
 
     if(textVal === null || textVal === ''){
-      alert("message is empty");
+      //alert('message is empty')
+      displayErr('message is empty');
       $tweetTextbox.focus();
       return;
     } 
 
     if(textValLen > 140) {
-      alert("Your message is over 140 characters");
+      displayErr('Your message is over 140 characters');
       $tweetTextbox.focus();
       return;
     } 
       console.log('request Started');
       //$.ajax('/tweets',{type:})
+      //$error.slideUp();
+      $error.hide();
       
       const data = $tweetTextbox.serialize();
       $.ajax({
