@@ -1,5 +1,5 @@
 $(document).ready( function() {
-  alert('on master');
+
 
   $("#tweet-text").on('input', function() {
     let $counterElement = $(this).parent().children('.btn-counter').children('.counter');
