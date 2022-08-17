@@ -1,6 +1,3 @@
-$(document).ready( function() {
-  //console.log('hello there');
-
   $("#tweet-text").on('input', function() {
     let $counterElement = $(this).parent().children('.btn-counter').children('.counter');
     let characterLength = $(this).val().length;
@@ -14,6 +11,4 @@ $(document).ready( function() {
     }
       $counterElement.text(currentValue);
   });
-
-}); 
 
