@@ -104,8 +104,7 @@ $(document).ready(function() {
    * RENDER THE TWEET DATA
    ****************************************************************************/
   //hide the error and load the existing tweets
-  const $error = $('#error');
-  //$error.hide();
+  
   loadTweets();
   //console.log(initialTweets);
   
@@ -138,6 +137,7 @@ $(document).ready(function() {
       console.log('request Started');
       //$.ajax('/tweets',{type:})
       //$error.slideUp();
+      const $error = $('#error');
       $error.hide();
       
       const data = $tweetTextbox.serialize();

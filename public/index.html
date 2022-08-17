@@ -25,6 +25,9 @@
     <!-- HEADER CSS -->
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
+    <!-- MEDIA CSS -->
+    <link rel="stylesheet" href="/styles/media.css" type="text/css" />
+
     <!-- TIMEAGO JS LIBRARY LOAD -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -45,16 +48,18 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
-      <section class="arrow">
-        <p><span>Write</span> a new tweet</p>
-        <i class="fa-solid fa-angles-down"></i>
-      </section>
-    </nav>
+    
+      <nav class="nav-section">
+        <span>tweeter</span>
+        <section class="arrow">
+          <p><span>Write</span> a new tweet</p>
+          <i class="fa-solid fa-angles-down"></i>
+        </section>
+      </nav>
 
     <!-- HEADER WITH AVATAR -->
-    <header id="main-header">
+
+    <header id="main-header" class="header">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
@@ -62,14 +67,13 @@
       <div>
           <h2 class="name">Your Name</h2>
       </div>
-  </header>
+    </header>
   
 
     <!-- Page-specific (main) content here -->
     <main id="container" class="container">
       
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
         <label class="error" id="error" ><i class="fa-solid fa-triangle-exclamation" ><span></span></i> </label>
         <form method="post" action="/tweets" class="tweet-form" id="tweet-form">
           <label for="tweet-text"></label>
@@ -86,5 +90,6 @@
       </section>
 
     </main>
+
   </body>
 </html>
