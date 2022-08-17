@@ -5,7 +5,7 @@
  */
 
 /****************************************************************************************************************************************************************
-* FUNCTIONS FOR PAGE
+* FUNCTIONS FOR PAGE BEHAVIOUR
 ********************************************************************************
 *******************************************************************************/
 
@@ -15,6 +15,7 @@
 const timeAgoConvert = function(date) {
   return timeago.format(date);
 }
+
 /*****************************************************************************
 * FOR CONVERTING DATES
 ****************************************************************************/
@@ -39,8 +40,8 @@ const renderTweets = function(tweets) {
     // to add it to the page so we can make sure it's got all the right elements, classes, etc.
     $tweetContainer.prepend($tweet); 
   }
-  
 }
+
 /*****************************************************************************
 * FOR ESCAPING
 ****************************************************************************/
@@ -101,10 +102,10 @@ function displayErr(msg) {
 * WHEN THE DOCUMENT IS FINISHED RENDERING
 ********************************************************************************
 *******************************************************************************/
-$(document).ready(function() {
-  /*****************************************************************************
-   * RENDER THE TWEET DATA
-   ****************************************************************************/
+
+/*****************************************************************************
+* RENDER THE TWEET DATA
+****************************************************************************/
   //hide the error and load the existing tweets
   
   loadTweets();
@@ -119,7 +120,6 @@ $(document).ready(function() {
     e.preventDefault();
 
     const $tweetTextbox = $('#tweet-text');
-    //const textVal = $tweetTextbox.val()
     const textVal = $tweetTextbox.val();
     const textValLen = textVal.length;
     
@@ -152,4 +152,3 @@ $(document).ready(function() {
       $tweetTextbox.val('');
       console.log('request ended')
   })
-})
