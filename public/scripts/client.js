@@ -79,11 +79,9 @@ function loadTweets() {
   $.ajax({
     url:'/tweets',
     type:'GET',
-  }).done(
-    function(data) {
-      renderTweets(data);
-    }
-  )
+    success: (data) => {renderTweets(data);},
+    error: (error) => {console.log(error)}
+  });
 }
 
 /*****************************************************************************
@@ -135,8 +133,6 @@ $(document).ready(function() {
       return;
     } 
       console.log('request Started');
-      //$.ajax('/tweets',{type:})
-      //$error.slideUp();
       const $error = $('#error');
       $error.hide();
       
@@ -144,11 +140,11 @@ $(document).ready(function() {
       $.ajax({
         url: '/tweets',
         type: 'POST',
-        data: data
+        data: data,
+        success: () => {loadTweets();},
+        error: (error) => {console.log(error)}
       })
-      .done(function(){
-        loadTweets();
-      });
+      
       $tweetTextbox.val('');
       console.log('request ended')
   })
