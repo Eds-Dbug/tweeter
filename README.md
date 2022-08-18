@@ -12,7 +12,25 @@ This repository is the starter code for the project: Students will fork and clon
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
 
+## Final Product
+- The main page
+
+!["The main page"](https://github.com/Eds-Dbug/tinyapp/blob/master/docs/main.png)
+
+- The main page with a link
+
+!["The main page with a link"](https://github.com/Eds-Dbug/tinyapp/blob/master/docs/main_link.png)
+
+- The main page with a cookie
+
+!["The page with a cookie once logged in"](https://github.com/Eds-Dbug/tinyapp/blob/master/docs/TinyApp_with_cookie.png)
+
 ## Dependencies
 
 - Express
-- Node 5.10.x or above
+- Node 16.16.x or above
+
+## Getting Started
+
+- Install all dependencies (using the `npm install` command).
+- Run the development web server using the `npm run local` command.
