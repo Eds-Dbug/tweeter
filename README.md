@@ -15,23 +15,23 @@ This repository is the starter code for the project: Students will fork and clon
 ## Final Product
 - The page enlarged
 
-!["The page enlarged"](https://github.com/Eds-Dbug/tinyapp/blob/master/docs/main.png)
+!["The page enlarged"](https://github.com/Eds-Dbug/tweeter/blob/master/public/images/tweeter_page_large.png)
 
 - The page shrunk
 
-!["The page shrunk"](https://github.com/Eds-Dbug/tinyapp/blob/master/docs/main_link.png)
+!["The page shrunk"](https://github.com/Eds-Dbug/tweeter/blob/master/public/images/tweeter_page_small.png)
 
 - The with a added tweet "Hello There!"
 
-!["The with a added tweet "Hello There!" "](https://github.com/Eds-Dbug/tinyapp/blob/master/docs/TinyApp_with_cookie.png)
+!["The with a added tweet "Hello There!" "](https://github.com/Eds-Dbug/tweeter/blob/master/public/images/added_tweet_hello_there.png)
 
 - An error thrown when the text is empty
 
-!["An error thrown when the text is empty"](https://github.com/Eds-Dbug/tinyapp/blob/master/docs/TinyApp_with_cookie.png)
+!["An error thrown when the text is empty"](https://github.com/Eds-Dbug/tweeter/blob/master/public/images/with_empty_message.png)
 
 - An error thrown when the character limit exceeds 140
 
-!["An error thrown when the character limit exceeds 140"](https://github.com/Eds-Dbug/tinyapp/blob/master/docs/TinyApp_with_cookie.png)
+!["An error thrown when the character limit exceeds 140"](https://github.com/Eds-Dbug/tweeter/blob/master/public/images/error_message_exceed.png)
 
 ## Dependencies
 
