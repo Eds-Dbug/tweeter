@@ -13,17 +13,25 @@ This repository is the starter code for the project: Students will fork and clon
 4. Go to <http://localhost:8080/> in your browser.
 
 ## Final Product
-- The main page
+- The page enlarged
 
-!["The main page"](https://github.com/Eds-Dbug/tinyapp/blob/master/docs/main.png)
+!["The page enlarged"](https://github.com/Eds-Dbug/tinyapp/blob/master/docs/main.png)
 
-- The main page with a link
+- The page shrunk
 
-!["The main page with a link"](https://github.com/Eds-Dbug/tinyapp/blob/master/docs/main_link.png)
+!["The page shrunk"](https://github.com/Eds-Dbug/tinyapp/blob/master/docs/main_link.png)
 
-- The main page with a cookie
+- The with a added tweet "Hello There!"
 
-!["The page with a cookie once logged in"](https://github.com/Eds-Dbug/tinyapp/blob/master/docs/TinyApp_with_cookie.png)
+!["The with a added tweet "Hello There!" "](https://github.com/Eds-Dbug/tinyapp/blob/master/docs/TinyApp_with_cookie.png)
+
+- An error thrown when the text is empty
+
+!["An error thrown when the text is empty"](https://github.com/Eds-Dbug/tinyapp/blob/master/docs/TinyApp_with_cookie.png)
+
+- An error thrown when the character limit exceeds 140
+
+!["An error thrown when the character limit exceeds 140"](https://github.com/Eds-Dbug/tinyapp/blob/master/docs/TinyApp_with_cookie.png)
 
 ## Dependencies
 
