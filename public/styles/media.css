@@ -18,4 +18,8 @@
     margin-top: 7em;
     width: 60%
   }
+
+  header#main-header section.arrow {
+    display: none;
+  }
 }

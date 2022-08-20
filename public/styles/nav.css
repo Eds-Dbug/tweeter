@@ -10,8 +10,14 @@ nav{
   position: fixed;
 }
 
+
+nav span {
+  font-family: 'Bungee', cursive;
+}
+
+
 .toggle {
-  background-color: #4056A1;
+  background-color: transparent;
   border:none;
   position: relative;
   top: 0;
@@ -44,9 +50,5 @@ nav{
 
 .fa-solid {
   color:#d31717;
-}
-
-nav span {
-  font-family: 'Bungee', cursive;
 }
 
