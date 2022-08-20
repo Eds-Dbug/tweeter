@@ -22,7 +22,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 - The with a added tweet "Hello There!"
 
-!["The with a added tweet "Hello There!" "](https://github.com/Eds-Dbug/tweeter/blob/master/public/images/added_tweet_hello_there.png)
+!["The with a added tweet "Hello There!" "](https://github.com/Eds-Dbug/tweeter/blob/master/public/images/added_tweet_hello_there1.png)
 
 - An error thrown when the text is empty
 
