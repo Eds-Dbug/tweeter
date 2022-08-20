@@ -36,7 +36,8 @@ This repository is the starter code for the project: Students will fork and clon
 ## Dependencies
 
 - Express
-- Node 16.16.x or above
+- Node 5.10.x or above (NOTE: may only work with latest version of node e.g (NODE 16.16.x) )
+- timeago
 
 ## Getting Started
 

@@ -32,7 +32,7 @@ const renderTweets = function(tweets) {
   // loops through tweets
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
-  $tweetContainer = $('#tweet-container')
+  const $tweetContainer = $('#tweet-container');
   $tweetContainer.html('');
 
   for(const data of tweets) {
@@ -123,7 +123,6 @@ function displayErr(msg) {
     const textVal = $tweetTextbox.val();
     const textValLen = textVal.length;
     
-
     if(textVal === null || textVal === ''){
       //alert('message is empty')
       displayErr('message is empty');
@@ -149,6 +148,8 @@ function displayErr(msg) {
         error: (error) => {console.log(error)}
       })
       
+      const $tweetCounter = $('.counter');
+      $tweetCounter.val('140');
       $tweetTextbox.val('');
       console.log('request ended')
   })
