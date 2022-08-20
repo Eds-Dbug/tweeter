@@ -24,7 +24,6 @@ nav span {
 }
 
 .toggle:hover {
-
   animation: MoveUpDown 0.7s  infinite;
 }
 
