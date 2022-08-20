@@ -5,6 +5,10 @@ article.tweet {
   margin-top: 1em;
 }
 
+article.tweet:hover {
+  box-shadow: 5px 10px #accafa;
+}
+
 article.tweet header {
   display: flex;
   justify-content: space-between;
@@ -32,6 +36,8 @@ article.tweet p {
 .options i.fa.fa-flag:hover, .options i.fa.fa-retweet:hover, .options i.fa.fa-heart:hover {
   color: red;
 }
+
+
 
 article.tweet footer {
   display: flex;
