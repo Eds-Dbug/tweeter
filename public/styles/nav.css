@@ -10,6 +10,27 @@ nav{
   position: fixed;
 }
 
+.toggle {
+  background-color: #4056A1;
+  border:none;
+  position: relative;
+  top: 0;
+}
+
+.toggle:hover {
+
+  animation: MoveUpDown 0.7s  infinite;
+}
+
+@keyframes MoveUpDown {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 10px;
+  }
+}
+
 .arrow {
   display: flex;
   flex-direction: column;
