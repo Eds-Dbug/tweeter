@@ -1,33 +1,32 @@
-
-
-header#main-header {
+header#main-header{
   height: 400px;
   width: 100%;
   margin-bottom: 2em;
   display: flex;
   justify-content: center;
-  padding: 350px 0 200px 0;
+  padding: 350px 0 200px 0 ;
   box-sizing: border-box;
   background-color: orange;
   background-image: url("../images/arabesque.png");
 }
 
 header#main-header section.arrow {
-  position: absolute;
-  top: 0;
-  right: 0.5em;
+  position:absolute;
+  top:0;
+  right:0.5em;
   font-size: 20px;
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
 }
 
-header#main-header section.arrow button {
+header#main-header section.arrow button{
   background-color: transparent;
 }
 
-header#main-header section.arrow p span {
-  font-family: "Bungee", cursive;
+header#main-header section.arrow p span{
+  font-family: 'Bungee', cursive;
+  
 }
 
 .name {
@@ -40,3 +39,8 @@ header#main-header section.arrow p span {
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+

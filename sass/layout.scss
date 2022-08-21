@@ -6,7 +6,6 @@
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -14,16 +13,17 @@ html {
 /*
  * Global layout stuff
  */
+
 body {
-  display: flex;
+  display:flex;
   flex-direction: column;
   color: #545149;
   background-color: #f4f1ec;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
 }
 
-main {
+main{
   width: 90%;
   margin: auto;
   text-align: center;
@@ -33,21 +33,21 @@ main {
 
 .toggle-top {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom:0;
+  right:0;
   padding: 1em;
   border: none;
-  border-radius: 50%;
-  background-color: orange;
+  border-radius:50%;
+  background-color:orange ;
   display: none;
 }
 
 .toggle-top i {
-  color: #FFFFFF;
+  color:#FFFFFF;
 }
 
 .toggle-top:hover {
-  animation: MoveUpDown1 0.7s infinite;
+  animation: MoveUpDown1 0.7s  infinite;
 }
 
 @keyframes MoveUpDown1 {
@@ -58,6 +58,9 @@ main {
     bottom: 20px;
   }
 }
+
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+ 
