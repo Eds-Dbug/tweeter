@@ -39,12 +39,12 @@ main{
   border: none;
   border-radius:50%;
   background-color:orange ;
+  display: none;
 }
 
 .toggle-top i {
   color:#FFFFFF;
 }
-
 
 .toggle-top:hover {
   animation: MoveUpDown1 0.7s  infinite;
