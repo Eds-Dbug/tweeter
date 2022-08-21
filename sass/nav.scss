@@ -1,34 +1,48 @@
-nav{
+@import 'variables';
+@import 'mixins';
+
+nav.nav-section{
+  @include flex ($display: none, $direction:row, $content:space-between, $alignment:center);
+  position: fixed;
   height: 120px;
   width: 100%;
-  background-color: #4056A1;
-  color: #FFFFFF;
   padding: 0 1.5em;
-  display: none;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
+  background-color: $header-background;
+  color: $default-white;
+
+  span {
+    font-family: $bungee-font;
+  }
+
+  section.arrow {
+    @include flex;
+    box-sizing: border-box;
+
+    p {
+      margin-bottom: 0.2em;
+    }
+
+    button.toggle {
+      border: none;
+      background-color: transparent;
+      position: relative;
+      top: 0;
+
+      i.fa-solid {
+        color:$arrow-down-color;
+      }
+    }
+  }
+  
 }
 
-
-#tweeter-title {
-  font-family: 'Bungee', cursive;
+span#tweeter-title {
+  font-family: $bungee-font;
   top: 1em;
   left: 0.5em;
   position: fixed;
-  color: #FFFFFF;
+  color: $default-white;
   opacity: 0.5;
-}
-
-nav span {
-  font-family: 'Bungee', cursive;
-}
-
-.toggle {
-  background-color: transparent;
-  border:none;
-  position: relative;
-  top: 0;
 }
 
 .toggle:hover {
@@ -44,18 +58,7 @@ nav span {
   }
 }
 
-.arrow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-}
 
-.arrow p {
-  margin-bottom: 0.2em;
-}
 
-.fa-solid {
-  color:#d31717;
-}
+
 

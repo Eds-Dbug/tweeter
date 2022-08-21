@@ -1,53 +1,53 @@
-.tweet-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+@import 'variables';
+@import 'mixins';
 
-.tweet-text {
-  width: 90%;
-  border:none;
-  resize: none;
-  outline: none;
-  border-bottom: solid 5px black;
-  background-color: #f4f1ec;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: large;
-  font-weight: bold;
-  color: #545149;
-}
+form.tweet-form {
+  @include flex;
 
-.tweet-btn {
-  font-family: 'Bungee', cursive;
-  color: #FFFFFF;
-  background-color: #243260;
-  font-size: smaller;
-}
+  .tweet-text {
+    width: 90%;
+    border:none;
+    resize: none;
+    outline: none;
+    border-bottom: solid 5px black;
+    background-color: $body-background;
+    font-family: $sans-pro;
+    font-size: large;
+    font-weight: bold;
+    color: $tweet-border;
+  }
 
-.counter {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: larger;
-  font-weight: bold;
-}
+  div.btn-counter {
+    margin: 0.5em 0;
+    width: 90%;
+    @include flex-default($content: space-between);
 
-.btn-counter {
-  margin: 0.5em 0;
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
+    .tweet-btn {
+      font-family: $bungee-font;
+      color: $default-white;
+      background-color: $tweet-btn-color;
+      font-size: smaller;
+    }
+
+    .counter {
+      font-family: $sans-pro;
+      font-size: larger;
+      font-weight: bold;
+    }
+  }
+
 }
 
 .error{
   display: none;
   background-color: red;
   padding: 0 0.4em;
-}
 
-.error i {
-  color: #FFFFFF;
-}
+  i {
+    color: $default-white;
 
-.error i span {
-  font-family: 'Source Sans Pro',sans-serif;
+    span {
+      font-family: $sans-pro;
+    }
+  }
 }

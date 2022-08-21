@@ -1,42 +1,43 @@
-
-
 header#main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   height: 400px;
   width: 100%;
   margin-bottom: 2em;
-  display: flex;
-  justify-content: center;
   padding: 350px 0 200px 0;
   box-sizing: border-box;
   background-color: orange;
   background-image: url("../images/arabesque.png");
 }
-
+header#main-header section.your-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header#main-header section.your-name div h2.name {
+  color: #FFFFFF;
+}
 header#main-header section.arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   right: 0.5em;
   font-size: 20px;
   color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
 }
-
 header#main-header section.arrow button {
   background-color: transparent;
+  border: none;
+  position: relative;
+  color: #d31717;
+  top: 0;
 }
-
 header#main-header section.arrow p span {
   font-family: "Bungee", cursive;
-}
-
-.name {
-  color: #FFFFFF;
-}
-
-.your-name {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }

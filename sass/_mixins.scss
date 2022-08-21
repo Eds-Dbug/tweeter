@@ -1,0 +1,20 @@
+@import 'variables';
+
+@mixin flex($display: flex,$direction: column, $content: center,$alignment:center) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $alignment;
+}
+
+@mixin flex-short($direction: column) {
+  display:flex;
+  flex-direction: $direction;
+}
+
+@mixin flex-default($display:flex,$direction:row,$content:flex-start,$item:stretch) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $item;
+}

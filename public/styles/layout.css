@@ -30,8 +30,7 @@ main {
   background-color: #f4f1ec;
   box-sizing: border-box;
 }
-
-.toggle-top {
+main button.toggle-top {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -41,12 +40,11 @@ main {
   background-color: orange;
   display: none;
 }
-
-.toggle-top i {
+main button.toggle-top i {
   color: #FFFFFF;
 }
 
-.toggle-top:hover {
+button.toggle-top:hover {
   animation: MoveUpDown1 0.7s infinite;
 }
 

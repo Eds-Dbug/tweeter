@@ -1,11 +1,10 @@
-.tweet-form {
+form.tweet-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.tweet-text {
+form.tweet-form .tweet-text {
   width: 90%;
   border: none;
   resize: none;
@@ -17,25 +16,24 @@
   font-weight: bold;
   color: #545149;
 }
-
-.tweet-btn {
+form.tweet-form div.btn-counter {
+  margin: 0.5em 0;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+form.tweet-form div.btn-counter .tweet-btn {
   font-family: "Bungee", cursive;
   color: #FFFFFF;
   background-color: #243260;
   font-size: smaller;
 }
-
-.counter {
+form.tweet-form div.btn-counter .counter {
   font-family: "Source Sans Pro", sans-serif;
   font-size: larger;
   font-weight: bold;
-}
-
-.btn-counter {
-  margin: 0.5em 0;
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .error {
@@ -43,11 +41,9 @@
   background-color: red;
   padding: 0 0.4em;
 }
-
 .error i {
   color: #FFFFFF;
 }
-
 .error i span {
   font-family: "Source Sans Pro", sans-serif;
 }

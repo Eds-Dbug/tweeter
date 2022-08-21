@@ -2,28 +2,29 @@
  @media screen and (min-width:1024px){
   body {
     flex-direction: row;
-  }
 
-  #tweeter-title{
-    display:none;
-  }
+    span#tweeter-title{
+      display:none;
+    }
 
-  nav.nav-section {
-    display: flex;
-  }
+    nav.nav-section {
+      display: flex;
+    }
 
-  header#main-header.header {
-    margin: 7em 2em;
-    width: 40%;
-    padding-top: 250px;
-  }
+    header#main-header.header {
+      margin: 7em 2em;
+      width: 40%;
+      padding-top: 250px;
 
-  main {
-    margin-top: 7em;
-    width: 60%
-  }
+      section.arrow {
+        display: none;
+      }
+    }
 
-  header#main-header section.arrow {
-    display: none;
+    main {
+      margin-top: 7em;
+      width: 60%
+    }
+   
   }
 }

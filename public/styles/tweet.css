@@ -1,24 +1,9 @@
 article.tweet {
   width: 90%;
   margin: auto;
-  border: 3px solid #6c2323;
+  border: 3px solid #545149;
   margin-top: 1em;
 }
-
-article.tweet:hover {
-  box-shadow: 5px 10px #accafa;
-}
-
-article.tweet header {
-  display: flex;
-  justify-content: space-between;
-  margin: 1em;
-}
-
-article.tweet header div {
-  display: flex;
-}
-
 article.tweet p {
   border-bottom: 2px solid;
   width: 90%;
@@ -28,17 +13,29 @@ article.tweet p {
   overflow-x: auto;
   overflow-y: hidden;
 }
-
-.options {
+article.tweet header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+}
+article.tweet header div {
+  display: flex;
+}
+article.tweet footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 1em;
+}
+article.tweet .options {
   color: #243260;
+}
+
+article.tweet:hover {
+  box-shadow: 5px 10px #accafa;
 }
 
 .options i.fa.fa-flag:hover, .options i.fa.fa-retweet:hover, .options i.fa.fa-heart:hover {
   color: red;
-}
-
-article.tweet footer {
-  display: flex;
-  justify-content: space-between;
-  margin: 1em;
 }

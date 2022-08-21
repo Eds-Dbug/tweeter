@@ -2,22 +2,22 @@
   body {
     flex-direction: row;
   }
-  #tweeter-title {
+  body span#tweeter-title {
     display: none;
   }
-  nav.nav-section {
+  body nav.nav-section {
     display: flex;
   }
-  header#main-header.header {
+  body header#main-header.header {
     margin: 7em 2em;
     width: 40%;
     padding-top: 250px;
   }
-  main {
+  body header#main-header.header section.arrow {
+    display: none;
+  }
+  body main {
     margin-top: 7em;
     width: 60%;
-  }
-  header#main-header section.arrow {
-    display: none;
   }
 }

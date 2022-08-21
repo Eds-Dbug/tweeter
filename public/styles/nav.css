@@ -1,33 +1,45 @@
-nav {
-  height: 120px;
-  width: 100%;
-  background-color: #4056A1;
-  color: #FFFFFF;
-  padding: 0 1.5em;
+nav.nav-section {
   display: none;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  height: 120px;
+  width: 100%;
+  padding: 0 1.5em;
+  background-color: #4056A1;
+  color: #FFFFFF;
+}
+nav.nav-section span {
+  font-family: "Bungee", cursive;
+}
+nav.nav-section section.arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+nav.nav-section section.arrow p {
+  margin-bottom: 0.2em;
+}
+nav.nav-section section.arrow button.toggle {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  top: 0;
+}
+nav.nav-section section.arrow button.toggle i.fa-solid {
+  color: #d31717;
 }
 
-#tweeter-title {
+span#tweeter-title {
   font-family: "Bungee", cursive;
   top: 1em;
   left: 0.5em;
   position: fixed;
   color: #FFFFFF;
   opacity: 0.5;
-}
-
-nav span {
-  font-family: "Bungee", cursive;
-}
-
-.toggle {
-  background-color: transparent;
-  border: none;
-  position: relative;
-  top: 0;
 }
 
 .toggle:hover {
@@ -41,18 +53,4 @@ nav span {
   50% {
     top: 10px;
   }
-}
-.arrow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.arrow p {
-  margin-bottom: 0.2em;
-}
-
-.fa-solid {
-  color: #d31717;
 }

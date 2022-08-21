@@ -1,44 +1,56 @@
+@import 'variables';
+@import 'mixins';
+
+
+
 header#main-header{
+  @include flex($direction: row, $content:center);
   height: 400px;
   width: 100%;
   margin-bottom: 2em;
-  display: flex;
-  justify-content: center;
   padding: 350px 0 200px 0 ;
   box-sizing: border-box;
   background-color: orange;
   background-image: url("../images/arabesque.png");
+
+  section.your-name {
+    @include flex;
+    div {
+      h2.name {
+        color: $default-white;
+      }
+    }
+  }
+
+  section.arrow {
+    @include flex;
+    position:absolute;
+    top:0;
+    right:0.5em;
+    font-size: 20px;
+    color: $default-white;
+
+    button{
+      background-color: transparent;
+      border:none;
+      position:relative;
+      color:$arrow-down-color;
+      top:0;
+    }
+
+    p {
+      span{
+        font-family: $bungee-font;
+      }
+    }
+  }
+
+
 }
 
-header#main-header section.arrow {
-  position:absolute;
-  top:0;
-  right:0.5em;
-  font-size: 20px;
-  color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-}
 
-header#main-header section.arrow button{
-  background-color: transparent;
-}
 
-header#main-header section.arrow p span{
-  font-family: 'Bungee', cursive;
-  
-}
 
-.name {
-  color: #FFFFFF;
-}
-
-.your-name {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 
 

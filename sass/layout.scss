@@ -1,3 +1,5 @@
+@import 'variables';
+@import 'mixins';
 /*
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://css-tricks.com/international-box-sizing-awareness-day/
@@ -15,11 +17,10 @@ html {
  */
 
 body {
-  display:flex;
-  flex-direction: column;
-  color: #545149;
-  background-color: #f4f1ec;
-  font-family: 'Source Sans Pro', sans-serif;
+  @include flex-short;
+  color: $tweet-border;
+  background-color: $body-background;
+  font-family: $sans-pro;
   font-size: 24px;
 }
 
@@ -27,26 +28,28 @@ main{
   width: 90%;
   margin: auto;
   text-align: center;
-  background-color: #f4f1ec;
+  background-color: $body-background;
   box-sizing: border-box;
+
+  button.toggle-top {
+    position: fixed;
+    bottom:0;
+    right:0;
+    padding: 1em;
+    border: none;
+    border-radius:50%;
+    background-color:orange ;
+    display: none;
+
+    i {
+      color: $default-white;
+    }
+  }
+
+
 }
 
-.toggle-top {
-  position: fixed;
-  bottom:0;
-  right:0;
-  padding: 1em;
-  border: none;
-  border-radius:50%;
-  background-color:orange ;
-  display: none;
-}
-
-.toggle-top i {
-  color:#FFFFFF;
-}
-
-.toggle-top:hover {
+button.toggle-top:hover {
   animation: MoveUpDown1 0.7s  infinite;
 }
 
@@ -58,7 +61,6 @@ main{
     bottom: 20px;
   }
 }
-
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
