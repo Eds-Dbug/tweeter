@@ -10,6 +10,11 @@ $(document).scroll(function () {
 });
 
 $toggleTop.click(function () {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
-})
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  $('.new-tweet').slideToggle();
+});
+
+
+
+
 

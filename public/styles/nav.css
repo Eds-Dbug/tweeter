@@ -11,10 +11,18 @@ nav{
 }
 
 
+#tweeter-title {
+  font-family: 'Bungee', cursive;
+  top: 1em;
+  left: 0.5em;
+  position: fixed;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
 nav span {
   font-family: 'Bungee', cursive;
 }
-
 
 .toggle {
   background-color: transparent;
